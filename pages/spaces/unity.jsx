@@ -433,6 +433,7 @@ export const UnityEnviroment = () => {
   codeUrl: "/Build/Build.wasm",
 });
 const loading = Math.round(loadingProgression * 100)
+console.log("zaid bhai first")
 
 
 const EnvironmentLoader = () => {
@@ -454,7 +455,7 @@ const  ModelLoader = () => {
 
 
 const  CreateAndJoinRooms = () => {
-  const unityData = {roomId:query.query.id,playerName:user.displayName,}
+  const unityData = {roomName:query.query.id,playerName:user.displayName,}
   const unityJson = JSON.stringify(unityData)
   sendMessage("CreateAndJoinRooms", "GetRoomData", unityJson);
 }
