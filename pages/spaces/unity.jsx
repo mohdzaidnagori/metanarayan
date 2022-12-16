@@ -455,7 +455,7 @@ const  ModelLoader = () => {
 
 
 const  CreateAndJoinRooms = () => {
-  const unityData = {roomName:query.query.id,playerName:user.displayName,}
+  const unityData = {roomName:query.query.name,playerName:user.displayName,}
   const unityJson = JSON.stringify(unityData)
   sendMessage("CreateAndJoinRooms", "GetRoomData", unityJson);
 }
